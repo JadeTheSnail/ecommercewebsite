@@ -1,0 +1,45 @@
+.headerContainer {
+    /* Header Display Style */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    /* Header Colour Style */
+    background-color: #98caf5;
+    border: 10px solid #6f9ac0;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 35px;
+
+    /* Header Sizing */
+    height: 50px;
+}
+
+.menuContainer {
+    /* Menu Display Style */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    /* Menu Cont sizing */
+    width: 50vw;
+}
+
+.basketContainer {
+    /* Menu Display Style */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    /* Menu Cont sizing */
+    width: 5vw;
+}
+
+.linkText {
+    text-decoration: none;
+    color: #000000;
+}
+
+.linkText:hover {
+    color: rgb(170, 145, 0);
+}

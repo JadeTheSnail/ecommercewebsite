@@ -1,0 +1,14 @@
+.BasketPageCont{
+    margin-top: 20px;
+}
+
+.BasketPageBox {
+    border: 10px solid #6f9ac0;
+    background-color: #98caf5;
+    
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    padding-bottom: 10px;
+    padding-left: 10px;
+}

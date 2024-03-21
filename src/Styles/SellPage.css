@@ -1,0 +1,23 @@
+.sellPageContainer {
+    margin-top: 20px;
+}
+
+.sellPageBox {
+    border: 10px solid #6f9ac0;
+    background-color: #98caf5;
+
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.sellPageInput {
+    display: flex;
+    flex-direction: row;
+}
+
+#inpDesc {
+    height: 20px;
+}

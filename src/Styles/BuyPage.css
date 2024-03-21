@@ -1,0 +1,57 @@
+.buyPageContainer {
+    margin-top: 20px;
+}
+
+.buyPageBox {
+    border: 10px solid #6f9ac0;
+    background-color: #98caf5;
+
+    /* height: 100%; */
+
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    contain: content;
+
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.productArea {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Products CSS */
+
+.productInfoBox {
+    width: 400px;
+
+    background-color: #6f9ac0;
+    display: flex;
+    flex-direction: row;
+
+    margin: 15px 15px 10px 15px;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 16px;
+    font-size: 20px;
+    text-wrap: wrap;
+}
+
+button {
+    width: 50px;
+    height: 25px;
+}
+
+#ProductImg {
+    width: 100px;
+    height: 100px;
+}
