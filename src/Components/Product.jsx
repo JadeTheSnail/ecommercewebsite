@@ -5,7 +5,7 @@ export default function Product(props) {
     // productDeets = [
 
     // ] 
-
+console.log(props)
     return (
         <div className='productInfoBox'>
             <img id='ProductImg' src={props.product.image} />
@@ -14,7 +14,10 @@ export default function Product(props) {
                 <p>Price: £{props.product.price}</p>
                 <p>Desc: {props.product.desc}</p>
                 <p>Find out more: {props.product.link}</p>
-                <button onClick={() => {props.addToBasket(props.product)}}>Buy</button>
+                { props.display && 
+                <button onClick={() => {props.addToBasket(props.product)}}>Buy</button>}
+                { props.remove && 
+                <button onClick={() => {props.removeFrmBasket(props.itemNum)}}>Remove</button>}
             </div>
 
 

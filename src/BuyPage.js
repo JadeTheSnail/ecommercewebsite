@@ -15,9 +15,17 @@ import Pill08 from './Images/DGreenPill.png'
 import Pill09 from './Images/PurplePill.png'
 
 
+// const PriceCalc = () => {
+//         let sum = 0
+//         for(let i in props.product.price) {
+//             sum += props.product.price[i]
+//         }
+//         return sum
+//         // CONSOLE log
+    
+//     }
 
-
-function Buy({addToBasket}, props) {
+function Buy({addToBasket}) {
 
     let [ProductPage, setProductPage] = useState([
         new Products(Pill01, 'Nightmare Pill', 15.50, 'This Pill will give you the spooky dreams', 'LINK!'),
@@ -33,13 +41,7 @@ function Buy({addToBasket}, props) {
 
     ])
 
-    const PriceCalc = () => {
-        let sum = 0
-        for(let i in props.product.price) {
-            sum += props.product.price[i]
-        }
-        return sum
-    }
+
 
 
     return (
@@ -51,7 +53,7 @@ function Buy({addToBasket}, props) {
                         <div className='productArea'>
                         {ProductPage.map((product) => {
                             return (
-                                <Product product={product} addToBasket = {addToBasket} />
+                                <Product product={product} addToBasket = {addToBasket} display = {true} remove = {false}/>
                             )
                         })}
                         </div>
@@ -63,5 +65,5 @@ function Buy({addToBasket}, props) {
         </div>
     );
 }
- 
+
 export default Buy;

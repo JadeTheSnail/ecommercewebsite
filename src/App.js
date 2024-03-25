@@ -21,10 +21,20 @@ let [newItems, setNewItems] = useState([]);
     setNewItems([...newItems, item])
   }
 
-  function RemoveFrmBasket(item) {
-    setNewItems([])
-
+  function RemoveFrmBasket(item, index, itemNum) {
+    console.log("ITEM", item)
+    const updatedItems = newItems.filter((item, index) => index !==index)
+    setNewItems(updatedItems)
+    
+  
   }
+
+
+
+
+
+
+
 
   return (
     <div className=''>
@@ -49,9 +59,8 @@ let [newItems, setNewItems] = useState([]);
     element = {
       <Buy 
         basket = {[]}
-        addToBasket = {AddtoBasket} 
-        remove = {RemoveFrmBasket}    
-
+        addToBasket = {AddtoBasket}    
+        calc = {[]}
       />
     }
   />
@@ -66,6 +75,7 @@ let [newItems, setNewItems] = useState([]);
     element={
       <BasketPage
       basket={newItems}
+      remove = {RemoveFrmBasket} 
       />
     }
   />
